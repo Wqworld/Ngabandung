@@ -5,6 +5,12 @@
     font-family: Arial, sans-serif;
 }
 
+/* body{
+    background-image: url('../assets/GedungSateBeranda.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -64,12 +70,17 @@ header {
 
 .header-container{
     display: flex;
-    width: 1300px;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1400px;
     border-radius: 28px;
     background-color: #B7F3ED;
-    margin: 40px;
+    margin: 60px;
     padding: 40px;
+    /* position: relative; */
+    /* position: absolute; */
 }
+
 
 .header-container h1{
     font-size: 89px;
@@ -77,7 +88,7 @@ header {
 
 .header-deks{
     width: 472px;
-    margin: 0px 50px;
+    margin: 0px 0px;
 }
 
 .header-deks p{
@@ -99,8 +110,112 @@ header {
     transition: background-color 0.3s ease;
 }
 
+.header-button:hover{
+    background-color: #88c5eb;
+}
+
 .header-gambar img{
     width: 100%;
     max-width: 717px;
     border-radius: 27px;
+}
+
+.budaya-container-kiri{
+    background-color: #B7F3ED;
+    width: 800px;
+    height: 400px;
+    border-radius: 0px 68px 68px 0px;
+    /* opacity: 78%; */
+    padding: 30px;
+    overflow: hidden;
+}
+
+.gambar-budaya-container{
+    display: flex;
+}
+
+.header-budaya img{
+    position: absolute;
+    margin-top: -90px;
+    z-index: 1;
+}
+
+.gambar-budaya{
+    display: flex;
+    flex-shrink: 0;
+    gap: 1rem;
+    padding: 1rem;
+    animation: inifinite-scroll-kiri 8s linear infinite;
+}
+
+@keyframes inifinite-scroll-kiri {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.destinasi-container{
+    background-color: #B7F3ED;
+    width: 800px;
+    margin-top: 40px;
+    height: 400px;
+    border-radius: 68px 0px 0px 68px; 
+    padding: 30px;
+    right: 0;
+    margin-left: 550px;
+
+
+    align-content: end;
+    overflow: hidden;
+}
+
+.header-button-destinasi {
+    display: flex;
+    background-color: #0CF2DC; 
+    color: black; 
+    font-size: 18px;
+    padding: 19px 24px;
+    border-radius: 12px; 
+    border: none;
+    transition: background-color 0.3s ease;
+
+    margin-left: auto; /* Memindahkan ke kanan jika parent-nya flex */
+}
+
+.header-destinasi img{
+    position: absolute;
+    margin-top: -90px;
+    z-index: 9;
+}
+
+.header-destinasi{
+    display: flex;
+}
+
+.pembatas{
+    width: 500px;
+}
+
+.gambar-destinasi-container{
+    display: flex;
+}
+
+.gambar-destinasi{
+    display: flex;  
+    flex-shrink: 0;
+    gap: 1rem;
+    padding: 1rem;
+    animation: inifinite-scroll-kanan 8s linear infinite;
+}
+
+@keyframes inifinite-scroll-kanan {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
