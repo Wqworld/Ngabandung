@@ -6,6 +6,7 @@
     <title>Ngabandung - Kuliner</title>
     <link rel="stylesheet" href="./src/style/style.css" />
     <link rel="stylesheet" href="./src/style/kuliner.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
   </head>
   <body>
     <header>
@@ -23,13 +24,15 @@
             />
           </div>
         </div>
-        <ul class="nav-links">
+        <div id="menuIcon" class="menu-icon">
+          <i class="ph ph-list"></i>
+        </div>
+        <ul id="navLinks" class="nav-links hidden">
           <li><a href="./index.html">Beranda</a></li>
           <li><a href="#">Budaya</a></li>
           <li><a href="./destinasi.html">Destinasi</a></li>
           <li><a href="#">Sejarah</a></li>
           <li><a href="./kuliner.html" class="active">Kuliner</a></li>
-          <li><button class="toggle-mode">🌙</button></li>
         </ul>
       </nav>
     </header>
@@ -299,5 +302,99 @@
       <br />
       <br />
     </main>
+    <footer>
+      <div class="container">
+        <div class="profile">
+          <div class="logo">
+            <img
+              src="src/assets/Logo_Ngabandung-removebg-preview.png"
+              alt="logo"
+            />
+            <a href="">NGABANDUNG</a>
+          </div>
+
+          <!-- Short About -->
+          <p>
+            Pusat informasi mengenai berbagai aspek Kota Bandung, termasuk
+            layanan publik, pariwisata, budaya, dan perkembangan terbaru untuk
+            warga serta pengunjung.
+          </p>
+
+          <!-- Social Media -->
+          <div class="social-media-container">
+            <div class="social-media">
+              <box-icon color="#fff" type="logo" name="instagram"></box-icon>
+            </div>
+            <div class="social-media">
+              <box-icon color="#fff" name="youtube" type="logo"></box-icon>
+            </div>
+            <div class="social-media">
+              <box-icon
+                color="#fff"
+                name="facebook-circle"
+                type="logo"
+              ></box-icon>
+            </div>
+            <div class="social-media">
+              <box-icon color="#fff" type="logo" name="tiktok"></box-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="link-container">
+          <div class="information">
+            <h1>Information</h1>
+            <ul>
+              <li>
+                <a href="#">Our Company</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Shop</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="resource">
+            <h1>Resources</h1>
+            <ul>
+              <li>
+                <a href="#">Support 24/7</a>
+              </li>
+              <li>
+                <a href="#">Help Center</a>
+              </li>
+              <li>
+                <a href="#">Terms & Condition</a>
+              </li>
+              <li>
+                <a href="#">How-to Instructions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navigation">
+            <h1>Navigation</h1>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/script/nav.js"></script>
   </body>
 </html>
