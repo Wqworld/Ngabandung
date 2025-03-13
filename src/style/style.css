@@ -400,3 +400,9 @@ footer .container {
     }
   }
 
+  .active {
+    background-color: #a8a8a8;
+    padding: 8px 12px;
+    border-radius: 1em;
+  }
+
