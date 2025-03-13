@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ngabandung - ByteForce</title>
     <link rel="stylesheet" href="src/style/style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -21,13 +22,15 @@
           />
         </div>
       </div>
-      <ul class="nav-links">
+      <div id="menuIcon" class="menu-icon">
+        <i class="ph ph-list"></i>
+      </div>
+      <ul id="navLinks" class="nav-links hidden">
         <li><a href="#" class="active">Beranda</a></li>
         <li><a href="#">Budaya</a></li>
         <li><a href="./destinasi.html">Destinasi</a></li>
         <li><a href="#">Sejarah</a></li>
         <li><a href="./kuliner.html">Kuliner</a></li>
-        <li><button class="toggle-mode">🌙</button></li>
       </ul>
     </nav>
 
@@ -178,5 +181,6 @@
         </div>
       </div>
     </footer>
+    <script src="./src/script/nav.js"></script>
   </body>
 </html>
